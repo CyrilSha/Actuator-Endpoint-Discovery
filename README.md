@@ -3,3 +3,5 @@ Spring Boot Actuator is a sub-project of Spring Boot that provides several endpo
 
 Exposing Actuator endpoints can potentially expose sensitive information about your application and its environment, and could also allow unauthorized users to make changes to the application's configuration or runtime environment.
 It is generally recommended to expose Actuator endpoints only to trusted parties, such as developers and system administrators, rather than to the general public.
+
+This project is built to discover available and unauthenticated Spring Boot Actuator endpoints on already deployed applications which may be used on apps directly or as part of CI/CD when you need to on-duty check that apps/services were not deployed with unauthenticated actuator and by some reason you cannot do that through config.
